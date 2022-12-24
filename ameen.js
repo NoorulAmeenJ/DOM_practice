@@ -56,11 +56,40 @@ function noorul() {
 }
 
 function mumtaj() {
-  
+ 
   console.log("mumtaj")
 
   // alert("samantha")
 }
 
+// var count=0 
+// var neww = document.createElement("div");
+// document.body.append(neww)
+// neww.textContent="count";
 
-setTimeout(mumtaj,5000);
+// setTimeout(mumtaj,2000);
+
+var noo= document.createElement("div");
+document.body.append(noo);
+var count=7
+noo.textContent=count;
+function jabar(){
+
+   count--
+   noo.textContent=count;
+ var mudu = setTimeout(jabar,2000)
+    if(count==5)
+    {
+       noo.textContent="again 5 seconds is there"
+    }
+    if(count==3)
+    {
+      clearTimeout(mudu);
+      noo.textContent="hope u enjoyed nayan"
+    }
+
+}
+
+
+
+ 
