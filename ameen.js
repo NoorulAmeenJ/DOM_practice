@@ -50,3 +50,17 @@ for(var i=0; i<5; i++){
 
 console.log(document);
 
+function noorul() {
+  console.log("ameen")
+  // alert("samantha")
+}
+
+function mumtaj() {
+  
+  console.log("mumtaj")
+
+  // alert("samantha")
+}
+
+
+setTimeout(mumtaj,5000);
