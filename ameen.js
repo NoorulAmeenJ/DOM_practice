@@ -85,9 +85,8 @@ function jabar(){
     if(count==3)
     {
       clearTimeout(mudu);
-      noo.textContent="hope u enjoyed nayan"
+      noo.textContent="hope u enjoyed nayan like this"
     }
-
 }
 
 
