@@ -68,7 +68,7 @@ function mumtaj() {
 // neww.textContent="count";
 
 // setTimeout(mumtaj,2000);
-
+// -------------------------------------------
 var noo= document.createElement("div");
 document.body.append(noo);
 var count=7
@@ -88,7 +88,24 @@ function jabar(){
       noo.textContent="hope u enjoyed nayan like this"
     }
 }
+// ---------------------------------------------
+var asna= document.createElement("button");
+document.body.append(asna);
+var count=7
+asna.textContent= "onchange the dropdown";
+function sana(){
 
+   count--
+   asna.textContent=count;
+ var mudu = setTimeout(sana,2000)
+    if(count==5)
+    {
+      asna.textContent="again 5 seconds is there"
+    }
+    if(count==3)
+    {
+      clearTimeout(mudu);
+      asna.textContent="hope u enjoyed nayan like this"
+    }
+}
 
-
- 
