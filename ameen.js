@@ -108,4 +108,20 @@ function sana(){
       asna.textContent="hope u enjoyed nayan like this"
     }
 }
+// ----------------------------------
+// day-3
+let vijay = document.createElement('div');
+document.body.append(vijay);
+vijay.textContent="innerWIDTH"
+window.addEventListener("resize",(e)=>{
+      vijay.textContent=`laptop width is ${window.innerWidth} laptop heigth is ${window.innerHeight}`
+      if(window.innerWidth > 300 ){
+        document.body.style.backgroundColor='blue'
+      }
+      else{
+        document.body.style.backgroundColor='pink'
+      }
+    })
 
+
+// console.log(window.innerWidth) 
