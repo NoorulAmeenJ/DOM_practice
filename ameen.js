@@ -123,10 +123,10 @@ window.addEventListener("resize",(e)=>{
       }
     })
 
-    let form = document.createElement('form');
+    var form = document.createElement('form');
 
 
-    let ajith = document.createElement('button');
+    var ajith = document.createElement('button');
     ajith.setAttribute('type', 'sumbit');
     form.setAttribute('id', 'form-id');
     ajith.setAttribute('id', "ajith")
@@ -134,10 +134,14 @@ window.addEventListener("resize",(e)=>{
     document.body.append(form);
   form.append(ajith);
 
-  let ajithi = document.getElementById('form-id')
-  ajithi.addEventListener("sumbit",()=>{
-      bv.preventDefault();
-      console.log("sum")
+  var avatar = document.createElement('div');
+document.body.append(avatar);
+avatar.textContent="mkk"
+
+  var  ajithi = document.getElementById('form-id')
+  ajithi.addEventListener("submit",(vi)=>{
+      vi.preventDefault();
+      avatar.textContent = text.value;
   }
   ) 
     
@@ -152,11 +156,16 @@ window.addEventListener("resize",(e)=>{
          document.body.append(muthu);
          muthu.textContent="heloo"
 var count = 0
-  let text= document.getElementById('textbox-id');
+ var text= document.getElementById('textbox-id');
          //  console.log(textd.innerHTML)
            text.addEventListener('input',(a)=>{
                  count++; 
-                 muthu.textContent=`input count is ${count}`              
+                 var kuru = count < 2 ? "blue" : "red";
+                 
+                 muthu.style.color= kuru;
+                 muthu.textContent=`input count is ${count} ${text.value}`              
            
                
               })  
+
+ console.log(eval(2*3))
