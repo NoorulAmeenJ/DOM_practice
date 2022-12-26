@@ -122,6 +122,34 @@ window.addEventListener("resize",(e)=>{
         document.body.style.backgroundColor='pink'
       }
     })
+    let textd = document.createElement('textarea');
+    textd.setAttribute('id', 'textbox-id');
+
+    document.body.appendChild(textd);
+     let text= document.getElementById('textbox-id');
+     console.log(window)
+     //  text.addEventListener('drag',(q)=>{
+        //   console.log(this); 
+        //  })  
 
 
+
+    let form = document.createElement('form');
+
+
+    let ajith = document.createElement('button');
+    ajith.setAttribute('type', 'sumbit');
+    form.setAttribute('id', 'form-id');
+    ajith.setAttribute('id', "ajith")
+    ajith.textContent="submit"
+    document.body.append(form);
+  form.append(ajith);
+
+  let ajithi = document.getElementById('form-id')
+  ajithi.addEventListener("submit",(bv)=>{
+      bv.preventDefault();
+      console.log("sum")
+  }
+  ) 
+    
 // console.log(window.innerWidth) 
